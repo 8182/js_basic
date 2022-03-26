@@ -8,22 +8,25 @@
     <title>Dog</title>
 </head>
 <body>
-<h2>transformador de tu edad, a edad caninca</h2>
+    <h2>transformador de tu edad, a edad caninca</h2>
     <form action="">
         <h4>Ingresa tu edad:</h4>
         <input type="text" name="myAge" id="">
-
+        
         <input type="button" value="Calculate" onclick="dog_years(this.form)">
-
+        
         <h4>Tu edad en edad canina es:</h4>
         <input type="text" name="dogAge" id="" disabled="yes">
-
-
+        
+        
     </form>
-
-
-
-
-
+    
+    <script>
+        function dog_years(value_user){
+            value_user.dogAge.value = value_user.myAge.value * 7 
+        }``
+        
+        
+    </script>
 </body>
 </html>
