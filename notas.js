@@ -38,3 +38,9 @@ x **= y --> exponenciacion
 
 
 
+innerHTML = lanza al html lo que se le asine por ej:
+document.getElementById('id').innerHTML = 3+5;
+
+Math.round = redondeo tradicional
+Math.floor = redondeo hacia abajo
+Math.cell = redondeo hacia arriba

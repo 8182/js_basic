@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./ej1/test.js"></script>
+    <title>prtueba</title>
+</head>
+<body>
+    <form action="">
+        <h1 class='pt-5 container'>Ayudanos a mejorar contestando esta breve encuesta</h1>      
+        <p class='pt-1 container'>¿Recibio al tecnico en su  domicilio?</p>
+        <form action='' class='container' id='attitude_provider'>
+            <div class='container2' id='get_visit'>
+                <div class='item'>
+                    <label for='yes' >
+                        <input class='radio' type='radio' name='get_visit' id='yes' value='get_visit1'>
+                        <span>👍</span>
+                    </label>
+                </div>
+                <div class='item'>
+                    <label for='no'>
+                        <input class='radio' type='radio' name='get_visit' id='no' value='get_visit2' onclick="no_avalibility(this.form)">
+                        <span onclick="no_avalibility(this.form)">👎</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+        <form action="" class="container" id="no_option" style="display:none">
+            <div class='' style=''>
+                <label for='hour_scheduling' class='select-label pb-2'>¿por que no pudo recibir al tecnico?</label>
+                <select class='form-select' aria-label='Default select example'> 
+                    <option value='1'>El tecnico no se presento</option>
+                    <option value='2'>El tecnico </option>
+                    <option value='2'>No me encontraba en el domicilio</option>
+                </select>
+            </div>
+            
+        </form>
+    </form>
+</body>
+
+<script>
+function no_avalibility(form){
+    
+    $(".no_option").show();
+}
+
+</script>
+</html>
